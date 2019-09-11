@@ -62,6 +62,14 @@ public class Base {
         cap.setCapability(MobileCapabilityType.DEVICE_NAME, workDevice);
         cap.setCapability(MobileCapabilityType.AUTOMATION_NAME,"uiautomator2");
         cap.setCapability(MobileCapabilityType.APP, prop.get(app));
+        cap.setCapability("noReset", true);
+        //cap.setCapability("appPackage", "com.your.package");
+        //cap.setCapability("appActivity", "com.your.package.MainActivity");
+        cap.setCapability("appPackage", "com.cellcom.cellcom_tv.stb");
+        //cap.setCapability("appActivity", "com.onoapps.cellcomtv.activities.MainActivity");
+        //cap.setCapability("appActivity", "com.onoapps.cellcomtv.activities.SplashActivity"); //no errors
+        //cap.setCapability("appActivity", "com.onoapps.cellcomtv.activities.LoginActivity");
+        //cap.setCapability("appActivity", "com.onoapps.cellcomtv.activities.NonLeanBackLauncherActivity");
         cap.setCapability(MobileCapabilityType.NEW_COMMAND_TIMEOUT, "60");
         driver = new AndroidDriver<>(new URL("http://127.0.0.1:4723/wd/hub"), cap);
         driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);

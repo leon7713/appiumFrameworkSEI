@@ -3,12 +3,11 @@
   <component name="ChangeListManager">
     <list default="true" id="4296cafb-b287-42a3-a209-d5ab985b69cd" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/firstSEI/Base.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/firstSEI/Base.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/firstSEI/ApiDemoTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/firstSEI/ApiDemoTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/firstSEI/global.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/firstSEI/global.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/pageObjects/ApiDemoTestPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pageObjects/ApiDemoTestPage.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/firstSEI/Base.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/firstSEI/Base.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/firstSEI/Utilities.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/firstSEI/Utilities.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/firstSEI/ApiDemoTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/firstSEI/ApiDemoTest.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/pageObjects/ApiDemoTestPage.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/pageObjects/ApiDemoTestPage.class" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -58,7 +57,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="TestNG.C:/Users/Leonidus/projects/appiumFrameworkSEI/testng.xml">
+  <component name="RunManager" selected="TestNG.ApiDemoTest.tempTest">
     <configuration name="ApiDemoTest" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="firstSEI.ApiDemoTest" />
       <module name="appiumFrameworkSEI" />
@@ -128,8 +127,8 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="TestNG.C:/Users/Leonidus/projects/appiumFrameworkSEI/testng.xml" />
         <item itemvalue="TestNG.ApiDemoTest.tempTest" />
+        <item itemvalue="TestNG.C:/Users/Leonidus/projects/appiumFrameworkSEI/testng.xml" />
         <item itemvalue="Application.ApiDemoTest" />
         <item itemvalue="Application.Base" />
         <item itemvalue="Application.App" />
