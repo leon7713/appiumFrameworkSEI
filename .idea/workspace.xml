@@ -5,9 +5,12 @@
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/firstSEI/Base.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/firstSEI/Base.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/firstSEI/global.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/firstSEI/global.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/pageObjects/ApiDemoTestPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pageObjects/ApiDemoTestPage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/pageObjects/ApiDemoTestPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pageObjects/MainPage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/firstSEI/ApiDemoTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/firstSEI/MainPageTests.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/firstSEI/Base.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/firstSEI/Base.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/pageObjects/ApiDemoTestPage.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/pageObjects/ApiDemoTestPage.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/pageObjects/ApiDemoTestPage.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/firstSEI/ApiDemoTest.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/testng.xml" beforeDir="false" afterPath="$PROJECT_DIR$/testng.xml" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -57,33 +60,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="TestNG.ApiDemoTest.tempTest">
-    <configuration name="ApiDemoTest" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="firstSEI.ApiDemoTest" />
-      <module name="appiumFrameworkSEI" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="firstSEI.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="App" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="firstSEI.App" />
-      <module name="appiumFrameworkSEI" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="firstSEI.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
+  <component name="RunManager" selected="TestNG.C:/Users/Leonidus/projects/appiumFrameworkSEI/testng.xml">
     <configuration name="Base" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="firstSEI.Base" />
       <module name="appiumFrameworkSEI" />
@@ -97,7 +74,21 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="ApiDemoTest.tempTest" type="TestNG" temporary="true" nameIsGenerated="true">
+    <configuration name="MainPage" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="pageObjects.MainPage" />
+      <module name="appiumFrameworkSEI" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="pageObjects.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="MainPageTests" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="firstSEI.MainPageTests" />
       <module name="appiumFrameworkSEI" />
       <extension name="coverage">
         <pattern>
@@ -105,12 +96,6 @@
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="firstSEI" />
-      <option name="MAIN_CLASS_NAME" value="firstSEI.ApiDemoTest" />
-      <option name="METHOD_NAME" value="tempTest" />
-      <option name="TEST_OBJECT" value="METHOD" />
-      <properties />
-      <listeners />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -125,13 +110,31 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="MainPageTests.openGooglePlayTest" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="appiumFrameworkSEI" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="firstSEI.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="firstSEI" />
+      <option name="MAIN_CLASS_NAME" value="firstSEI.MainPageTests" />
+      <option name="METHOD_NAME" value="openGooglePlayTest" />
+      <option name="TEST_OBJECT" value="METHOD" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="TestNG.ApiDemoTest.tempTest" />
         <item itemvalue="TestNG.C:/Users/Leonidus/projects/appiumFrameworkSEI/testng.xml" />
-        <item itemvalue="Application.ApiDemoTest" />
+        <item itemvalue="Application.MainPageTestPage" />
+        <item itemvalue="TestNG.MainPageTests.openGooglePlayTest" />
+        <item itemvalue="Application.MainPageTests" />
         <item itemvalue="Application.Base" />
-        <item itemvalue="Application.App" />
       </list>
     </recent_temporary>
   </component>

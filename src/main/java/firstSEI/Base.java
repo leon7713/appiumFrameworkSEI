@@ -63,9 +63,10 @@ public class Base {
         cap.setCapability(MobileCapabilityType.AUTOMATION_NAME,"uiautomator2");
         cap.setCapability(MobileCapabilityType.APP, prop.get(app));
         cap.setCapability("noReset", true);
+        cap.setCapability("udid", "GZ18120115200028");
         //cap.setCapability("appPackage", "com.your.package");
         //cap.setCapability("appActivity", "com.your.package.MainActivity");
-        cap.setCapability("appPackage", "com.cellcom.cellcom_tv.stb");
+        //cap.setCapability("appPackage", "com.cellcom.cellcom_tv.stb");
         //cap.setCapability("appActivity", "com.onoapps.cellcomtv.activities.MainActivity");
         //cap.setCapability("appActivity", "com.onoapps.cellcomtv.activities.SplashActivity"); //no errors
         //cap.setCapability("appActivity", "com.onoapps.cellcomtv.activities.LoginActivity");

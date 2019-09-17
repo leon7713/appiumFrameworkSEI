@@ -3,7 +3,7 @@
 <suite name="All Test Suite">
     <test verbose="2" preserve-order="true" name="C:/Users/Leonidus/projects/appiumFrameworkSEI">
         <classes>
-            <class name="firstSEI.ApiDemoTest"/>
+            <class name="firstSEI.MainPageTests"/>
         </classes>
     </test>
 </suite>
