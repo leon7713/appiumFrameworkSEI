@@ -49,11 +49,18 @@ public class Base {
         return isServerRunning;
     }
 
+    public static Properties prop;
+    public static Properties OR;
+    public static int beforeWait = 15000; //millis
+
     public static AndroidDriver<AndroidElement> Capabilities(String app, String device) throws IOException {
 
         FileInputStream fis = new FileInputStream(System.getProperty("user.dir") + "\\src\\main\\java\\firstSEI\\global.properties");
-        Properties prop = new Properties();
+        FileInputStream fis2 = new FileInputStream(System.getProperty("user.dir") + "\\src\\main\\java\\firstSEI\\OR.properties");
+        prop = new Properties();
+        OR = new Properties();
         prop.load(fis);
+        OR.load(fis2);
 
         AndroidDriver<AndroidElement> driver;
         DesiredCapabilities cap = new DesiredCapabilities();
@@ -61,20 +68,18 @@ public class Base {
         String workDevice = (String) prop.get(device);
         cap.setCapability(MobileCapabilityType.DEVICE_NAME, workDevice);
         cap.setCapability(MobileCapabilityType.AUTOMATION_NAME,"uiautomator2");
-        cap.setCapability(MobileCapabilityType.APP, prop.get(app));
+        //cap.setCapability(MobileCapabilityType.APP, prop.get(app));
         cap.setCapability("noReset", true);
         cap.setCapability("udid", "GZ18120115200028");
-        //cap.setCapability("appPackage", "com.your.package");
-        //cap.setCapability("appActivity", "com.your.package.MainActivity");
-        //cap.setCapability("appPackage", "com.cellcom.cellcom_tv.stb");
+        cap.setCapability("appPackage", "com.cellcom.cellcom_tv.stb");
         //cap.setCapability("appActivity", "com.onoapps.cellcomtv.activities.MainActivity");
-        //cap.setCapability("appActivity", "com.onoapps.cellcomtv.activities.SplashActivity"); //no errors
+        cap.setCapability("appActivity", "com.onoapps.cellcomtv.activities.SplashActivity"); //no errors
         //cap.setCapability("appActivity", "com.onoapps.cellcomtv.activities.LoginActivity");
         //cap.setCapability("appActivity", "com.onoapps.cellcomtv.activities.NonLeanBackLauncherActivity");
         cap.setCapability(MobileCapabilityType.NEW_COMMAND_TIMEOUT, "60");
         driver = new AndroidDriver<>(new URL("http://127.0.0.1:4723/wd/hub"), cap);
+        //driver.installApp("C:\\Users\\Leonidus\\Desktop\\Appium stuff\\CellcomTV_1.1.5.8_release_stb_signed.apk");
         driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
-        //driver.installApp("C:\\Users\\Leonidus\\projects\\Tutorial Appium\\src\\CellcomTV_1.1.5.8_debug_app.apk");
         return driver;
     }
 }

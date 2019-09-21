@@ -16,7 +16,7 @@ public class MainPage extends Base {
         AndroidDriver<AndroidElement> driver = Capabilities("app", "device");
         Utilities utilities = new Utilities(driver);
 
-        Thread.sleep(20000);
+        Thread.sleep(beforeWait);
         driver.pressKey(new KeyEvent(AndroidKey.DPAD_DOWN));
 
         for (int i = 0; i < 4; i++) {
@@ -27,7 +27,8 @@ public class MainPage extends Base {
         driver.pressKey(new KeyEvent(AndroidKey.DPAD_CENTER));
         Thread.sleep(5000);
         //driver.pressKey(new KeyEvent(AndroidKey.HOME));
-        driver.findElementById("com.android.vending:id/title_badge").isDisplayed();
+        //driver.findElementById("com.android.vending:id/title_badge").isDisplayed();
+        driver.findElementById(OR.getProperty("main_title_ID_GP")).isDisplayed();
         driver.pressKey(new KeyEvent(AndroidKey.BACK));
 
 
@@ -44,10 +45,10 @@ public class MainPage extends Base {
         AndroidDriver<AndroidElement> driver = Capabilities("app", "device");
         Utilities utilities = new Utilities(driver);
 
-        Thread.sleep(20000);
+        Thread.sleep(beforeWait);
         driver.pressKey(new KeyEvent(AndroidKey.DPAD_UP));
 
-        for (int i = 0; i < 14; i++) {
+        for (int i = 0; i < 13; i++) {
             driver.pressKey(new KeyEvent(AndroidKey.DPAD_LEFT));
             Thread.sleep(500);
         }
@@ -63,7 +64,7 @@ public class MainPage extends Base {
 
         driver.pressKey(new KeyEvent(AndroidKey.DPAD_CENTER));
         Thread.sleep(1000);
-        driver.findElementById("com.google.android.music:id/title_badge").isDisplayed();
+        driver.findElementById(OR.getProperty("main_title_ID_GPM")).isDisplayed();
         Thread.sleep(1000);
         //driver.pressKey(new KeyEvent(AndroidKey.BACK));
 
@@ -73,10 +74,10 @@ public class MainPage extends Base {
         AndroidDriver<AndroidElement> driver = Capabilities("app", "device");
         Utilities utilities = new Utilities(driver);
 
-        Thread.sleep(20000);
+        Thread.sleep(beforeWait);
         driver.pressKey(new KeyEvent(AndroidKey.DPAD_UP));
 
-        for (int i = 0; i < 14; i++) {
+        for (int i = 0; i < 13; i++) {
             driver.pressKey(new KeyEvent(AndroidKey.DPAD_LEFT));
             Thread.sleep(500);
         }
@@ -92,7 +93,7 @@ public class MainPage extends Base {
         driver.pressKey(new KeyEvent(AndroidKey.DPAD_LEFT));
         driver.pressKey(new KeyEvent(AndroidKey.DPAD_CENTER));
         Thread.sleep(1000);
-        driver.findElementById("com.google.android.play.games:id/title_badge").isDisplayed();
+        driver.findElementById(OR.getProperty("main_title_ID_GPG")).isDisplayed();
         Thread.sleep(1000);
         driver.pressKey(new KeyEvent(AndroidKey.BACK));
 

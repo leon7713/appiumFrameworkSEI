@@ -3,13 +3,14 @@
   <component name="ChangeListManager">
     <list default="true" id="4296cafb-b287-42a3-a209-d5ab985b69cd" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/firstSEI/Base.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/firstSEI/Base.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/firstSEI/global.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/firstSEI/global.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/pageObjects/ApiDemoTestPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pageObjects/MainPage.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/firstSEI/ApiDemoTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/firstSEI/MainPageTests.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/pageObjects/MainPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pageObjects/MainPage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/firstSEI/MainPageTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/firstSEI/MainPageTests.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/firstSEI/Base.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/firstSEI/Base.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/pageObjects/ApiDemoTestPage.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/firstSEI/ApiDemoTest.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/pageObjects/MainPage.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/pageObjects/MainPage.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/firstSEI/MainPageTests.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/firstSEI/MainPageTests.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/testng.xml" beforeDir="false" afterPath="$PROJECT_DIR$/testng.xml" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -38,6 +39,7 @@
   <component name="ProjectId" id="1QUzzpq3H9miWf0mQhFrtxGMIY9" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="PropertiesComponent">
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/main/java/firstSEI" />
     <property name="project.structure.last.edited" value="SDKs" />
     <property name="project.structure.proportion" value="0.0" />
     <property name="project.structure.side.proportion" value="0.0" />
@@ -46,6 +48,9 @@
   <component name="RecentsManager">
     <key name="CopyClassDialog.RECENTS_KEY">
       <recent name="firstSEI" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\Leonidus\projects\appiumFrameworkSEI\src\main\java\firstSEI" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -131,7 +136,6 @@
     <recent_temporary>
       <list>
         <item itemvalue="TestNG.C:/Users/Leonidus/projects/appiumFrameworkSEI/testng.xml" />
-        <item itemvalue="Application.MainPageTestPage" />
         <item itemvalue="TestNG.MainPageTests.openGooglePlayTest" />
         <item itemvalue="Application.MainPageTests" />
         <item itemvalue="Application.Base" />

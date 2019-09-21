@@ -19,8 +19,6 @@ public class MainPageTests extends Base {
         service = startServer();
         MainPage mp = new MainPage();
         mp.verifyGooglePlayPageTest();
-//        mp.verifyGooglePlayMusicPageTest();
-//        mp.verifyGooglePlayGamesPageTest();
         service.stop();
     }
 

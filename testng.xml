@@ -1,9 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
 <suite name="All Test Suite">
-    <test verbose="2" preserve-order="true" name="C:/Users/Leonidus/projects/appiumFrameworkSEI">
+
+<!--    <test verbose="2" preserve-order="true" name="MainPageTests">-->
+<!--        <classes>-->
+<!--            <class name="firstSEI.MainPageTests"/>-->
+<!--        </classes>-->
+<!--    </test>-->
+
+    <test verbose="2" preserve-order="true" name="GooglePlayHomeTests">
         <classes>
-            <class name="firstSEI.MainPageTests"/>
+            <class name="firstSEI.GooglePlayHomeTests"/>
         </classes>
     </test>
+
 </suite>
