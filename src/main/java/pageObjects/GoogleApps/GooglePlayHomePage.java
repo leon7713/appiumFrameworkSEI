@@ -30,8 +30,34 @@ public class GooglePlayHomePage extends Base {
         //driver.pressKey(new KeyEvent(AndroidKey.HOME));
         //driver.findElementById("com.android.vending:id/title_badge").isDisplayed();
         driver.findElementById(OR.getProperty("main_title_ID_GP")).isDisplayed();
-        int sideCategoriesCount = driver.findElementsById("com.android.vending:id/row_header").size();
-        Assert.assertEquals(sideCategoriesCount, Integer.parseInt(OR.getProperty("sideCategoriesCount")));
-        //continue here !!!
+
+        for (int i = 1; i <= Integer.parseInt(OR.getProperty("sideElementsCount")); i++) {
+            driver.findElementByXPath("//android.support.v7.widget.RecyclerView[@content-desc=\"Navigation menu\"]" +
+                    "/android.widget.FrameLayout[" + i + "]/android.widget.TextView").isDisplayed();
+        }
+
+        driver.findElementByXPath(OR.getProperty("Featured_Apps")).isDisplayed();
+        driver.findElementByXPath(OR.getProperty("Movies_TV")).isDisplayed();
+        //Thread.sleep(3000);
+        driver.pressKey(new KeyEvent(AndroidKey.DPAD_RIGHT));
+        Thread.sleep(500);
+        driver.pressKey(new KeyEvent(AndroidKey.DPAD_DOWN));
+        driver.pressKey(new KeyEvent(AndroidKey.DPAD_DOWN));
+        driver.findElementByXPath(OR.getProperty("Top_Paid_Apps")).isDisplayed();
+        driver.pressKey(new KeyEvent(AndroidKey.DPAD_DOWN));
+        driver.findElementByXPath(OR.getProperty("Top_Free")).isDisplayed();
+        driver.pressKey(new KeyEvent(AndroidKey.DPAD_DOWN));
+        driver.findElementByXPath(OR.getProperty("Stream_the_music")).isDisplayed();
+        driver.pressKey(new KeyEvent(AndroidKey.DPAD_DOWN));
+        driver.findElementByXPath(OR.getProperty("Entertainment_Apps")).isDisplayed();
+        driver.pressKey(new KeyEvent(AndroidKey.DPAD_DOWN));
+        driver.findElementByXPath(OR.getProperty("Get_started")).isDisplayed();
+        driver.pressKey(new KeyEvent(AndroidKey.DPAD_DOWN));
+        driver.findElementByXPath(OR.getProperty("Apps")).isDisplayed();
+
+        for (int i = 0; i < 7; i++) {
+            driver.pressKey(new KeyEvent(AndroidKey.DPAD_UP));
+            Thread.sleep(500);
+        }
     }
 }
