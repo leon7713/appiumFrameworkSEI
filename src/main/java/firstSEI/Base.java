@@ -51,7 +51,7 @@ public class Base {
 
     public static Properties prop;
     public static Properties OR;
-    public static int beforeWait = 15000; //millis
+    public static int beforeWait = 10000; //millis
 
     public static AndroidDriver<AndroidElement> Capabilities(String app, String device) throws IOException {
 

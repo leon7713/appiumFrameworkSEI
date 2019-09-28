@@ -3,9 +3,15 @@
   <component name="ChangeListManager">
     <list default="true" id="4296cafb-b287-42a3-a209-d5ab985b69cd" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/firstSEI/Base.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/firstSEI/Base.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/firstSEI/OR.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/firstSEI/OR.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/firstSEI/Utilities.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/firstSEI/Utilities.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/pageObjects/GoogleApps/GooglePlayHomePage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pageObjects/GoogleApps/GooglePlayHomePage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/firstSEI/GooglePlayHomeTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/firstSEI/GooglePlayHomeTests.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/firstSEI/Utilities.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/firstSEI/Utilities.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/pageObjects/GoogleApps/GooglePlayHomePage.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/pageObjects/GoogleApps/GooglePlayHomePage.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/firstSEI/GooglePlayHomeTests.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/firstSEI/GooglePlayHomeTests.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/testng.xml" beforeDir="false" afterPath="$PROJECT_DIR$/testng.xml" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -73,12 +79,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="MainPage" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="pageObjects.MainPage" />
+    <configuration name="GooglePlayHomePage" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="pageObjects.GoogleApps.GooglePlayHomePage" />
       <module name="appiumFrameworkSEI" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="pageObjects.*" />
+          <option name="PATTERN" value="pageObjects.GoogleApps.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -130,6 +136,7 @@
     <recent_temporary>
       <list>
         <item itemvalue="TestNG.C:/Users/Leonidus/projects/appiumFrameworkSEI/testng.xml" />
+        <item itemvalue="Application.GooglePlayHomePage" />
         <item itemvalue="TestNG.MainPageTests.openGooglePlayTest" />
         <item itemvalue="Application.MainPageTests" />
         <item itemvalue="Application.Base" />

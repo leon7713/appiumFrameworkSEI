@@ -2,11 +2,11 @@ package firstSEI;
 
 import org.testng.annotations.BeforeTest;
 import org.testng.annotations.Test;
-import pageObjects.GoogleApps.GooglePlayHomePage;
+import pageObjects.GoogleApps.GooglePlayGamesPage;
 
 import java.io.IOException;
 
-public class GooglePlayHomeTests extends Base {
+public class GooglePlayGamesTests extends Base{
 
     @BeforeTest
     public void killAllNodes() throws IOException, InterruptedException {
@@ -15,10 +15,10 @@ public class GooglePlayHomeTests extends Base {
     }
 
     @Test
-    public void googlePlayHomePageTest() throws IOException, InterruptedException {
+    public void googlePlayGamesPageTest() throws Exception {
         service = startServer();
-        GooglePlayHomePage gphp = new GooglePlayHomePage();
-        gphp.verifyGooglePlayHomePageTest();
+        GooglePlayGamesPage gpgp = new GooglePlayGamesPage();
+        gpgp.verifyGooglePlayGamesPageTest();
         service.stop();
     }
 }
