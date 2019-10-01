@@ -2,8 +2,6 @@ package pageObjects.GoogleApps;
 
 import firstSEI.Base;
 import firstSEI.Utilities;
-import io.appium.java_client.android.AndroidDriver;
-import io.appium.java_client.android.AndroidElement;
 import io.appium.java_client.android.nativekey.AndroidKey;
 import io.appium.java_client.android.nativekey.KeyEvent;
 import org.testng.Assert;
@@ -16,13 +14,8 @@ public class GooglePlayGamesPage extends Base {
 
     public void verifyGooglePlayGamesPageTest() throws Exception {
 
-        AndroidDriver<AndroidElement> driver = Capabilities("app", "device");
-        Utilities utilities = new Utilities(driver);
+        Utilities utilities = new Utilities();
 
-        utilities.goToGooglePlay();
-
-        driver.pressKey(new KeyEvent(AndroidKey.DPAD_DOWN));
-        utilities.findByText(OR.getProperty("featuredGamesCat_GPG"));
         driver.pressKey(new KeyEvent(AndroidKey.DPAD_RIGHT));
         driver.findElementsByClassName("android.widget.ImageView").get(2).isDisplayed();
 

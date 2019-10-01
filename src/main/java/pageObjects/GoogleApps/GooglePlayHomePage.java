@@ -15,13 +15,8 @@ public class GooglePlayHomePage extends Base {
 
     public void verifyGooglePlayHomePageTest() throws IOException, InterruptedException {
 
-        AndroidDriver<AndroidElement> driver = Capabilities("app", "device");
-        Utilities utilities = new Utilities(driver);
+        Utilities utilities = new Utilities();
 
-        utilities.goToGooglePlay();
-
-        driver.findElementByXPath(OR.getProperty("Featured_Apps")).isDisplayed();
-        driver.findElementByXPath(OR.getProperty("Movies_TV")).isDisplayed();
         driver.pressKey(new KeyEvent(AndroidKey.DPAD_RIGHT));
         Thread.sleep(500);
         driver.pressKey(new KeyEvent(AndroidKey.DPAD_DOWN));
@@ -38,7 +33,6 @@ public class GooglePlayHomePage extends Base {
             driver.pressKey(new KeyEvent(AndroidKey.DPAD_DOWN));
             driver.findElementByXPath(categoriesList.get(i)).isDisplayed();
         }
-
 
         for (int i = 0; i < 7; i++) {
             driver.pressKey(new KeyEvent(AndroidKey.DPAD_UP));

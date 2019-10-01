@@ -2,21 +2,27 @@
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
 <suite name="All Test Suite">
 
-<!--    <test verbose="2" preserve-order="true" name="MainPageTests">-->
-<!--        <classes>-->
-<!--            <class name="firstSEI.MainPageTests"/>-->
-<!--        </classes>-->
-<!--    </test>-->
+    <test verbose="2" preserve-order="true" name="MainPageTests">
+        <classes>
+            <class name="firstSEI.MainPageTests"/>
+        </classes>
+    </test>
 
-<!--    <test verbose="2" preserve-order="true" name="GooglePlayHomeTests">-->
-<!--        <classes>-->
-<!--            <class name="firstSEI.GooglePlayHomeTests"/>-->
-<!--        </classes>-->
-<!--    </test>-->
+    <test verbose="2" preserve-order="true" name="GooglePlayHomeTests">
+        <classes>
+            <class name="firstSEI.GoogleApps.GooglePlayHomeTests"/>
+        </classes>
+    </test>
 
     <test verbose="2" preserve-order="true" name="GooglePlayGamesTests">
         <classes>
-            <class name="firstSEI.GooglePlayGamesTests"/>
+            <class name="firstSEI.GoogleApps.GooglePlayGamesTests"/>
+        </classes>
+    </test>
+
+    <test verbose="2" preserve-order="true" name="GooglePlaySettingsTests">
+        <classes>
+            <class name="firstSEI.GoogleApps.GooglePlaySettingsTests"/>
         </classes>
     </test>
 

@@ -2,19 +2,23 @@ package pageObjects;
 
 import firstSEI.Utilities;
 import firstSEI.Base;
-import io.appium.java_client.android.AndroidDriver;
-import io.appium.java_client.android.AndroidElement;
 import io.appium.java_client.android.nativekey.AndroidKey;
 import io.appium.java_client.android.nativekey.KeyEvent;
+import pageObjects.GoogleApps.GooglePlayGamesPage;
+import pageObjects.GoogleApps.GooglePlayHomePage;
+import pageObjects.GoogleApps.GooglePlaySettingsPage;
 
 import java.io.IOException;
 
 public class MainPage extends Base {
 
-    public void verifyGooglePlayPageTest() throws IOException, InterruptedException {
+    Utilities utilities = new Utilities();
 
-        AndroidDriver<AndroidElement> driver = Capabilities("app", "device");
-        Utilities utilities = new Utilities(driver);
+    public MainPage() throws IOException {
+    }
+
+
+    public void verifyGooglePlayPageTest() throws IOException, InterruptedException {
 
         Thread.sleep(beforeWait);
         driver.pressKey(new KeyEvent(AndroidKey.DPAD_DOWN));
@@ -26,8 +30,6 @@ public class MainPage extends Base {
 
         driver.pressKey(new KeyEvent(AndroidKey.DPAD_CENTER));
         Thread.sleep(5000);
-        //driver.pressKey(new KeyEvent(AndroidKey.HOME));
-        //driver.findElementById("com.android.vending:id/title_badge").isDisplayed();
         driver.findElementById(OR.getProperty("main_title_ID_GP")).isDisplayed();
         driver.pressKey(new KeyEvent(AndroidKey.BACK));
 
@@ -42,8 +44,6 @@ public class MainPage extends Base {
     }
 
     public void verifyGooglePlayMusicPageTest() throws IOException, InterruptedException {
-        AndroidDriver<AndroidElement> driver = Capabilities("app", "device");
-        Utilities utilities = new Utilities(driver);
 
         Thread.sleep(beforeWait);
         driver.pressKey(new KeyEvent(AndroidKey.DPAD_UP));
@@ -66,13 +66,9 @@ public class MainPage extends Base {
         Thread.sleep(1000);
         driver.findElementById(OR.getProperty("main_title_ID_GPM")).isDisplayed();
         Thread.sleep(1000);
-        //driver.pressKey(new KeyEvent(AndroidKey.BACK));
-
     }
 
     public void verifyGooglePlayGamesPageTest() throws IOException, InterruptedException {
-        AndroidDriver<AndroidElement> driver = Capabilities("app", "device");
-        Utilities utilities = new Utilities(driver);
 
         Thread.sleep(beforeWait);
         driver.pressKey(new KeyEvent(AndroidKey.DPAD_UP));
@@ -97,5 +93,30 @@ public class MainPage extends Base {
         Thread.sleep(1000);
         driver.pressKey(new KeyEvent(AndroidKey.BACK));
 
+    }
+
+    public GooglePlaySettingsPage getGooglePlaySettingsPage() throws InterruptedException {
+        utilities.goToGooglePlay();
+
+        for (int i = 0; i < 3; i++) {
+            driver.pressKey(new KeyEvent(AndroidKey.DPAD_DOWN));
+        }
+
+        utilities.findByText(OR.getProperty("SettingsSideBar"));
+        return new GooglePlaySettingsPage();
+    }
+
+    public GooglePlayGamesPage getGooglePlayGamesPage() throws InterruptedException {
+        utilities.goToGooglePlay();
+        driver.pressKey(new KeyEvent(AndroidKey.DPAD_DOWN));
+        utilities.findByText(OR.getProperty("featuredGamesCat_GPG"));
+        return new GooglePlayGamesPage();
+    }
+
+    public GooglePlayHomePage getGooglePlayHomePage() throws InterruptedException {
+        utilities.goToGooglePlay();
+        driver.findElementByXPath(OR.getProperty("Featured_Apps")).isDisplayed();
+        driver.findElementByXPath(OR.getProperty("Movies_TV")).isDisplayed();
+        return new GooglePlayHomePage();
     }
 }

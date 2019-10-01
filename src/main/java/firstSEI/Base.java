@@ -52,8 +52,10 @@ public class Base {
     public static Properties prop;
     public static Properties OR;
     public static int beforeWait = 10000; //millis
+    public static AndroidDriver<AndroidElement> driver;
 
-    public static AndroidDriver<AndroidElement> Capabilities(String app, String device) throws IOException {
+
+    public static void Capabilities() throws IOException {
 
         FileInputStream fis = new FileInputStream(System.getProperty("user.dir") + "\\src\\main\\java\\firstSEI\\global.properties");
         FileInputStream fis2 = new FileInputStream(System.getProperty("user.dir") + "\\src\\main\\java\\firstSEI\\OR.properties");
@@ -62,10 +64,10 @@ public class Base {
         prop.load(fis);
         OR.load(fis2);
 
-        AndroidDriver<AndroidElement> driver;
+        //AndroidDriver<AndroidElement> driver;
         DesiredCapabilities cap = new DesiredCapabilities();
 
-        String workDevice = (String) prop.get(device);
+        String workDevice = prop.getProperty("device");
         cap.setCapability(MobileCapabilityType.DEVICE_NAME, workDevice);
         cap.setCapability(MobileCapabilityType.AUTOMATION_NAME,"uiautomator2");
         //cap.setCapability(MobileCapabilityType.APP, prop.get(app));
@@ -80,6 +82,6 @@ public class Base {
         driver = new AndroidDriver<>(new URL("http://127.0.0.1:4723/wd/hub"), cap);
         //driver.installApp("C:\\Users\\Leonidus\\Desktop\\Appium stuff\\CellcomTV_1.1.5.8_release_stb_signed.apk");
         driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
-        return driver;
+        //return driver;
     }
 }
