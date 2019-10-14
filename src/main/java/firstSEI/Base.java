@@ -4,13 +4,18 @@ import io.appium.java_client.android.AndroidDriver;
 import io.appium.java_client.android.AndroidElement;
 import io.appium.java_client.remote.MobileCapabilityType;
 import io.appium.java_client.service.local.AppiumDriverLocalService;
+import org.apache.commons.io.FileUtils;
+import org.openqa.selenium.OutputType;
+import org.openqa.selenium.TakesScreenshot;
 import org.openqa.selenium.remote.DesiredCapabilities;
 
+import java.io.File;
 import java.io.FileInputStream;
 import java.io.IOException;
 import java.net.MalformedURLException;
 import java.net.ServerSocket;
 import java.net.URL;
+import java.util.Date;
 import java.util.Properties;
 import java.util.concurrent.TimeUnit;
 
@@ -83,5 +88,12 @@ public class Base {
         //driver.installApp("C:\\Users\\Leonidus\\Desktop\\Appium stuff\\CellcomTV_1.1.5.8_release_stb_signed.apk");
         driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
         //return driver;
+    }
+
+    public static void getScreenshot(String s) throws IOException {
+        Date currentDate = new Date();
+        File screenshotFile = ((TakesScreenshot)driver).getScreenshotAs(OutputType.FILE);
+        String myDate = currentDate.toString().replace(":","_").replace(" ","_") + ".jpg";
+        FileUtils.copyFile(screenshotFile, new File("C:\\Users\\Leonidus\\SEI_screenshots\\" + s + " " + myDate));
     }
 }

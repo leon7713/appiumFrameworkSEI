@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" verbose="0" name="Failed suite [All Test Suite]">
+  <listeners>
+    <listener class-name="firstSEI.Resources.Listeners"/>
+    <listener class-name="firstSEI.Resources.ExtentReporterNG"/>
+  </listeners>
+  <test thread-count="5" verbose="0" name="GooglePlayGamesTests(failed)">
+    <classes>
+      <class name="firstSEI.GoogleApps.GooglePlayGamesTests">
+        <methods>
+          <include name="tearDown"/>
+          <include name="googlePlayGamesPageTest"/>
+          <include name="killAllNodes"/>
+        </methods>
+      </class> <!-- firstSEI.GoogleApps.GooglePlayGamesTests -->
+    </classes>
+  </test> <!-- GooglePlayGamesTests(failed) -->
+  <test thread-count="5" verbose="0" name="GooglePlaySettingsTests(failed)">
+    <classes>
+      <class name="firstSEI.GoogleApps.GooglePlaySettingsTests">
+        <methods>
+          <include name="googlePlayHomePageTest"/>
+          <include name="tearDown"/>
+          <include name="killAllNodes"/>
+        </methods>
+      </class> <!-- firstSEI.GoogleApps.GooglePlaySettingsTests -->
+    </classes>
+  </test> <!-- GooglePlaySettingsTests(failed) -->
+  <test thread-count="5" verbose="0" name="ParentalControlsPageTests(failed)">
+    <classes>
+      <class name="firstSEI.GoogleApps.SettingsPages.ParentalControlsPageTest">
+        <methods>
+          <include name="tearDown"/>
+          <include name="setOnOffParentalControlTest"/>
+          <include name="killAllNodes"/>
+          <include name="parentalControlsPageTest"/>
+        </methods>
+      </class> <!-- firstSEI.GoogleApps.SettingsPages.ParentalControlsPageTest -->
+    </classes>
+  </test> <!-- ParentalControlsPageTests(failed) -->
+</suite> <!-- Failed suite [All Test Suite] -->
