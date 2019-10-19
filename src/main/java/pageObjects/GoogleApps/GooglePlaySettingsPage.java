@@ -16,6 +16,11 @@ public class GooglePlaySettingsPage extends Base {
         driver.pressKey(new KeyEvent(AndroidKey.DPAD_RIGHT));
         int numberOfMainCat = driver.findElementsById(OR.getProperty("mainCatIcons_ID")).size();
         Assert.assertEquals(numberOfMainCat, Integer.parseInt(OR.getProperty("numberOfMainCat"))); //including search icon
+
+        //get back
+        for (int i = 0; i < 2; i++) {
+            driver.pressKey(new KeyEvent(AndroidKey.BACK));
+        }
     }
 
     public ParentalControlsPage getParentalControlsPage() {

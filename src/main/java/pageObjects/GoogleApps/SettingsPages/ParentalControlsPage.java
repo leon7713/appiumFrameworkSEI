@@ -29,9 +29,13 @@ public class ParentalControlsPage extends Base {
         int count = 4;
 
         for (int i = 0; i < 5; i++) {
+            Thread.sleep(500);
             driver.pressKey(new KeyEvent(AndroidKey.DPAD_UP));
-            String item = driver.findElementsById("com.android.vending:id/guidedactions_item_title").get(count).getText();
-            System.out.println("------------------------list: " + list.get(i) + " item: " + item);
+            //int size = driver.findElementsByXPath("//*/android.widget.LinearLayout[2]/android.widget.TextView").size();
+            //System.out.println("size: " + size);
+            String item = driver.findElementsByXPath("//*/android.widget.LinearLayout[2]/android.widget.TextView").get(count).getText();
+
+            System.out.println(i + "------------------------list: " + list.get(i) + " item: " + item);
             Assert.assertEquals(list.get(i), item);
             count--;
         }

@@ -35,7 +35,7 @@ public class GooglePlayGamesPage extends Base {
             System.out.println(entry.getKey() + " " + entry.getValue());
         }
 
-        String lastCatName = driver.findElementsByClassName("android.widget.TextView").get(9).getText();
+        String lastCatName = driver.findElementsById("com.android.vending:id/row_header").get(0).getText();
         Assert.assertEquals(lastCatName, OR.getProperty("lastCategoryName"));
 
         driver.pressKey(new KeyEvent(AndroidKey.DPAD_LEFT));
