@@ -6,6 +6,7 @@ import io.appium.java_client.android.nativekey.AndroidKey;
 import io.appium.java_client.android.nativekey.KeyEvent;
 import org.testng.Assert;
 import pageObjects.GoogleApps.SettingsPages.ParentalControlsPage;
+import pageObjects.GoogleApps.SettingsPages.PurchaseAuthorizationPage;
 
 public class GooglePlaySettingsPage extends Base {
 
@@ -28,5 +29,12 @@ public class GooglePlaySettingsPage extends Base {
             driver.pressKey(new KeyEvent(AndroidKey.DPAD_CENTER));
         }
         return new ParentalControlsPage();
+    }
+
+    public PurchaseAuthorizationPage getPurchaseAuthorizationPage() {
+        driver.pressKey(new KeyEvent(AndroidKey.DPAD_CENTER));
+        driver.pressKey(new KeyEvent(AndroidKey.DPAD_RIGHT));
+        driver.pressKey(new KeyEvent(AndroidKey.DPAD_CENTER));
+        return new PurchaseAuthorizationPage();
     }
 }

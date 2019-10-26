@@ -7,6 +7,7 @@ import io.appium.java_client.android.nativekey.KeyEvent;
 import pageObjects.GoogleApps.GooglePlayGamesPage;
 import pageObjects.GoogleApps.GooglePlayHomePage;
 import pageObjects.GoogleApps.GooglePlaySettingsPage;
+import pageObjects.GoogleApps.SettingsPages.PurchaseAuthorizationPage;
 
 import java.io.IOException;
 

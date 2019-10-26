@@ -31,9 +31,15 @@
 <!--    </classes>-->
 <!--    </test>-->
 
-    <test verbose="2" preserve-order="true" name="ParentalControlsPageTests">
+<!--    <test verbose="2" preserve-order="true" name="ParentalControlsPageTests">-->
+<!--        <classes>-->
+<!--            <class name="firstSEI.GoogleApps.SettingsPages.ParentalControlsPageTest"/>-->
+<!--        </classes>-->
+<!--    </test>-->
+
+    <test verbose="2" preserve-order="true" name="PurchaseAuthorizationPageTests">
         <classes>
-            <class name="firstSEI.GoogleApps.SettingsPages.ParentalControlsPageTest"/>
+            <class name="firstSEI.GoogleApps.SettingsPages.PurchaseAuthorizationPageTest"/>
         </classes>
     </test>
 
