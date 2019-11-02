@@ -23,7 +23,7 @@ public class PurchaseAuthorizationPage extends Base {
         map.put(2, "Never");
 
         for (int i = 0; i < 3; i++) {
-            String text = driver.findElementByXPath("//*/android.widget.LinearLayout[" + (i + 1) + "]/android.widget.LinearLayout[2]/android.widget.TextView").getText();
+            String text = driver.findElementByXPath("//*/android.widget.LinearLayout[" + (i + 1) + "]/android.widget.LinearLayout/android.widget.TextView").getText();
             Assert.assertEquals(map.get(i), text);
         }
 
@@ -39,7 +39,7 @@ public class PurchaseAuthorizationPage extends Base {
 
             utilities.findByText(OR.getProperty("main_title_PA_XPATH")); //main title
         }
-        
+
         for (int i = 0; i < 4; i++) {
             driver.pressKey(new KeyEvent(AndroidKey.BACK));
         }

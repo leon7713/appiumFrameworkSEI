@@ -37,9 +37,15 @@
 <!--        </classes>-->
 <!--    </test>-->
 
-    <test verbose="2" preserve-order="true" name="PurchaseAuthorizationPageTests">
+<!--    <test verbose="2" preserve-order="true" name="PurchaseAuthorizationPageTests">-->
+<!--        <classes>-->
+<!--            <class name="firstSEI.GoogleApps.SettingsPages.PurchaseAuthorizationPageTest"/>-->
+<!--        </classes>-->
+<!--    </test>-->
+
+    <test verbose="2" preserve-order="true" name="AutoUpdateAppsPageTests">
         <classes>
-            <class name="firstSEI.GoogleApps.SettingsPages.PurchaseAuthorizationPageTest"/>
+            <class name="firstSEI.GoogleApps.SettingsPages.AutoUpdateAppsPageTest"/>
         </classes>
     </test>
 
