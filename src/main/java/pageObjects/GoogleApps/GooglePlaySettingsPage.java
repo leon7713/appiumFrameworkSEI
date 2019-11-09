@@ -5,6 +5,7 @@ import firstSEI.Utilities;
 import io.appium.java_client.android.nativekey.AndroidKey;
 import io.appium.java_client.android.nativekey.KeyEvent;
 import org.testng.Assert;
+import pageObjects.GoogleApps.SettingsPages.AboutPage;
 import pageObjects.GoogleApps.SettingsPages.AutoUpdateAppsPage;
 import pageObjects.GoogleApps.SettingsPages.ParentalControlsPage;
 import pageObjects.GoogleApps.SettingsPages.PurchaseAuthorizationPage;
@@ -45,5 +46,13 @@ public class GooglePlaySettingsPage extends Base {
         }
         driver.pressKey(new KeyEvent(AndroidKey.DPAD_CENTER));
         return new AutoUpdateAppsPage();
+    }
+
+    public AboutPage getAboutPage() {
+        for (int i = 0; i < 4; i++) {
+            driver.pressKey(new KeyEvent(AndroidKey.DPAD_RIGHT));
+        }
+        driver.pressKey(new KeyEvent(AndroidKey.DPAD_CENTER));
+        return new AboutPage();
     }
 }
