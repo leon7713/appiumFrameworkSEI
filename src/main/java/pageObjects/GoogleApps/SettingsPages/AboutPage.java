@@ -35,9 +35,19 @@ public class AboutPage extends Base{
         Thread.sleep(1000);
         utilities.findByText(OR.getProperty("google_play_title_XPATH"));
 
-        while (!driver.findElementByXPath("//android.view.View[@text = 'פרטיות ותנאים']").isDisplayed()) {
-            driver.longPressKey((new KeyEvent(AndroidKey.DPAD_DOWN)));
-        } //not working!!!
+        //verify Open source licenses
+        driver.pressKey(new KeyEvent(AndroidKey.BACK));
+        Thread.sleep(500);
+        driver.pressKey(new KeyEvent(AndroidKey.DPAD_DOWN));
+        Thread.sleep(500);
+        driver.pressKey(new KeyEvent(AndroidKey.DPAD_CENTER));
 
+        for (int i = 0; i < Integer.parseInt(OR.getProperty("licensesCount")); i++) {
+            driver.pressKey(new KeyEvent(AndroidKey.DPAD_DOWN));
+        }
+
+        driver.findElementByAndroidUIAutomator(OR.getProperty("volleyRow_UIAUT"));
+
+        //verify Play Store version - can't be verified
     }
 }

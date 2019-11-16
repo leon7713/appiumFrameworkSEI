@@ -4,8 +4,8 @@
     <list default="true" id="4296cafb-b287-42a3-a209-d5ab985b69cd" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/firstSEI/OR.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/firstSEI/OR.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/pageObjects/GoogleApps/GooglePlaySettingsPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pageObjects/GoogleApps/GooglePlaySettingsPage.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/testng.xml" beforeDir="false" afterPath="$PROJECT_DIR$/testng.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/firstSEI/Utilities.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/firstSEI/Utilities.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/pageObjects/GoogleApps/SettingsPages/AboutPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pageObjects/GoogleApps/SettingsPages/AboutPage.java" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />

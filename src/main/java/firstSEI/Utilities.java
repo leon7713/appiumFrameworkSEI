@@ -19,7 +19,7 @@ public class Utilities extends Base {
         }
 
         driver.pressKey(new KeyEvent(AndroidKey.DPAD_CENTER));
-        Thread.sleep(5000);
+        Thread.sleep(2000); //increase if fails!!!
         //driver.pressKey(new KeyEvent(AndroidKey.HOME));
         //driver.findElementById("com.android.vending:id/title_badge").isDisplayed();
         driver.findElementById(OR.getProperty("main_title_ID_GP")).isDisplayed();
