@@ -59,7 +59,6 @@ public class Base {
     public static int beforeWait = 10000; //millis
     public static AndroidDriver<AndroidElement> driver;
 
-
     public static void Capabilities() throws IOException {
 
         FileInputStream fis = new FileInputStream(System.getProperty("user.dir") + "\\src\\main\\java\\firstSEI\\global.properties");

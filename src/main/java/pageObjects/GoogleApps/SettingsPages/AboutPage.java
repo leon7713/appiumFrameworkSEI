@@ -1,6 +1,5 @@
 package pageObjects.GoogleApps.SettingsPages;
 
-import firstSEI.Base;
 import firstSEI.Utilities;
 import io.appium.java_client.android.nativekey.AndroidKey;
 import io.appium.java_client.android.nativekey.KeyEvent;
@@ -8,9 +7,7 @@ import org.testng.Assert;
 
 import java.util.*;
 
-public class AboutPage extends Base{
-
-    Utilities utilities = new Utilities();
+public class AboutPage extends Utilities{
 
     public void verifyAboutPageTest() throws Exception {
         //verify main categories
@@ -31,23 +28,27 @@ public class AboutPage extends Base{
         }
 
         //verify Terms of Service
-        driver.pressKey(new KeyEvent(AndroidKey.DPAD_CENTER));
+        pressKeyComb("center", 1);
         Thread.sleep(1000);
-        utilities.findByText(OR.getProperty("google_play_title_XPATH"));
+        findByText(OR.getProperty("google_play_title_XPATH"));
 
         //verify Open source licenses
-        driver.pressKey(new KeyEvent(AndroidKey.BACK));
+        pressKeyComb("back", 1);
         Thread.sleep(500);
-        driver.pressKey(new KeyEvent(AndroidKey.DPAD_DOWN));
+        pressKeyComb("down", 1);
         Thread.sleep(500);
-        driver.pressKey(new KeyEvent(AndroidKey.DPAD_CENTER));
+        pressKeyComb("center", 1);
 
         for (int i = 0; i < Integer.parseInt(OR.getProperty("licensesCount")); i++) {
-            driver.pressKey(new KeyEvent(AndroidKey.DPAD_DOWN));
+            pressKeyComb("down", 1);
         }
 
-        driver.findElementByAndroidUIAutomator(OR.getProperty("volleyRow_UIAUT"));
+        findByTextByUIAUT("Volley");
 
         //verify Play Store version - can't be verified
+        //go back to main page
+        pressKeyComb("back", 2);
+        pressKeyComb("left", 4);
+        pressKeyComb("back", 1);
     }
 }

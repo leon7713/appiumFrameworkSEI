@@ -55,4 +55,10 @@
         </classes>
     </test>
 
+<!--    <test verbose="2" preserve-order="true" name="MyAppsPageTests">-->
+<!--        <classes>-->
+<!--            <class name="firstSEI.GoogleApps.GooglePlayMyAppsTests"/>-->
+<!--        </classes>-->
+<!--    </test>-->
+
 </suite>

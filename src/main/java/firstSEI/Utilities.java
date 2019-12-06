@@ -11,12 +11,10 @@ public class Utilities extends Base {
 
     public void goToGooglePlay() throws InterruptedException {
         Thread.sleep(beforeWait);
-        driver.pressKey(new KeyEvent(AndroidKey.DPAD_DOWN));
+        //driver.pressKey(new KeyEvent(AndroidKey.DPAD_DOWN));
+        pressKeyComb("down", 1);
 
-        for (int i = 0; i < 4; i++) {
-            driver.pressKey(new KeyEvent(AndroidKey.DPAD_LEFT));
-            Thread.sleep(500);
-        }
+        pressKeyComb("left", 4);
 
         driver.pressKey(new KeyEvent(AndroidKey.DPAD_CENTER));
         Thread.sleep(2000); //increase if fails!!!
@@ -32,5 +30,38 @@ public class Utilities extends Base {
 
     public void findByText(String text) {
         driver.findElementByXPath(text).isDisplayed();
+    }
+
+    public void findByTextByUIAUT(String neededText) {
+        driver.findElementByAndroidUIAutomator("text(\"" + neededText + "\")").isDisplayed();
+    }
+
+    public void pressKeyComb(String direction, int amount) throws InterruptedException {
+
+        String dpadDirection = direction.toLowerCase();
+
+        for (int i = 0; i < amount; i++) {
+            switch (dpadDirection) {
+                case "up":
+                    driver.pressKey(new KeyEvent(AndroidKey.DPAD_UP));
+                    break;
+                case "down":
+                    driver.pressKey(new KeyEvent(AndroidKey.DPAD_DOWN));
+                    break;
+                case "right":
+                    driver.pressKey(new KeyEvent(AndroidKey.DPAD_RIGHT));
+                    break;
+                case "left":
+                    driver.pressKey(new KeyEvent(AndroidKey.DPAD_LEFT));
+                    break;
+                case "center":
+                    driver.pressKey(new KeyEvent(AndroidKey.DPAD_CENTER));
+                    break;
+                case "back":
+                    driver.pressKey(new KeyEvent(AndroidKey.BACK));
+                    break;
+            }
+        }
+        Thread.sleep(300);
     }
 }

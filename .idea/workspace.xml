@@ -3,9 +3,14 @@
   <component name="ChangeListManager">
     <list default="true" id="4296cafb-b287-42a3-a209-d5ab985b69cd" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/firstSEI/Base.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/firstSEI/Base.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/firstSEI/OR.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/firstSEI/OR.properties" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/firstSEI/Utilities.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/firstSEI/Utilities.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/pageObjects/GoogleApps/SettingsPages/AboutPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pageObjects/GoogleApps/SettingsPages/AboutPage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/pageObjects/MainPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pageObjects/MainPage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/pageObjects/GoogleApps/SettingsPages/AboutPage.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/pageObjects/GoogleApps/SettingsPages/AboutPage.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/pageObjects/MainPage.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/pageObjects/MainPage.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/testng.xml" beforeDir="false" afterPath="$PROJECT_DIR$/testng.xml" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />

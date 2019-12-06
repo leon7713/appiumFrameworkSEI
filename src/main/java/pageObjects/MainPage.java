@@ -6,14 +6,14 @@ import io.appium.java_client.android.nativekey.AndroidKey;
 import io.appium.java_client.android.nativekey.KeyEvent;
 import pageObjects.GoogleApps.GooglePlayGamesPage;
 import pageObjects.GoogleApps.GooglePlayHomePage;
+import pageObjects.GoogleApps.GooglePlayMyAppsPage;
 import pageObjects.GoogleApps.GooglePlaySettingsPage;
-import pageObjects.GoogleApps.SettingsPages.PurchaseAuthorizationPage;
 
 import java.io.IOException;
 
 public class MainPage extends Base {
 
-    Utilities utilities = new Utilities();
+    Utilities util = new Utilities();
 
     public MainPage() throws IOException {
     }
@@ -97,27 +97,35 @@ public class MainPage extends Base {
     }
 
     public GooglePlaySettingsPage getGooglePlaySettingsPage() throws InterruptedException {
-        utilities.goToGooglePlay();
+        util.goToGooglePlay();
 
         for (int i = 0; i < 3; i++) {
             driver.pressKey(new KeyEvent(AndroidKey.DPAD_DOWN));
         }
 
-        utilities.findByText(OR.getProperty("SettingsSideBar"));
+        util.findByText(OR.getProperty("SettingsSideBar"));
         return new GooglePlaySettingsPage();
     }
 
     public GooglePlayGamesPage getGooglePlayGamesPage() throws InterruptedException {
-        utilities.goToGooglePlay();
+        util.goToGooglePlay();
         driver.pressKey(new KeyEvent(AndroidKey.DPAD_DOWN));
-        utilities.findByText(OR.getProperty("featuredGamesCat_GPG"));
+        util.findByText(OR.getProperty("featuredGamesCat_GPG"));
         return new GooglePlayGamesPage();
     }
 
     public GooglePlayHomePage getGooglePlayHomePage() throws InterruptedException {
-        utilities.goToGooglePlay();
+        util.goToGooglePlay();
         driver.findElementByXPath(OR.getProperty("Featured_Apps")).isDisplayed();
         driver.findElementByXPath(OR.getProperty("Movies_TV")).isDisplayed();
         return new GooglePlayHomePage();
+    }
+
+    public GooglePlayMyAppsPage getGooglePlayMyAppsPage() throws InterruptedException {
+        util.goToGooglePlay();
+        util.pressKeyComb("down", 2);
+        util.pressKeyComb("center", 1);
+        driver.findElementByAndroidUIAutomator(OR.getProperty("Recently_Updated_UIAUT")).isDisplayed();
+        return new GooglePlayMyAppsPage();
     }
 }
