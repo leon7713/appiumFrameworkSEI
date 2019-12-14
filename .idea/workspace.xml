@@ -2,17 +2,16 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="4296cafb-b287-42a3-a209-d5ab985b69cd" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/firstSEI/Base.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/firstSEI/Base.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/firstSEI/OR.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/firstSEI/OR.properties" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/firstSEI/Utilities.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/firstSEI/Utilities.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/pageObjects/GoogleApps/GooglePlayMyAppsPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pageObjects/GoogleApps/GooglePlayMyAppsPage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/pageObjects/GoogleApps/GooglePlaySettingsPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pageObjects/GoogleApps/GooglePlaySettingsPage.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/pageObjects/GoogleApps/SettingsPages/AboutPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pageObjects/GoogleApps/SettingsPages/AboutPage.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/pageObjects/MainPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pageObjects/MainPage.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/pageObjects/GoogleApps/SettingsPages/AboutPage.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/pageObjects/GoogleApps/SettingsPages/AboutPage.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/pageObjects/MainPage.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/pageObjects/MainPage.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/testng.xml" beforeDir="false" afterPath="$PROJECT_DIR$/testng.xml" afterDir="false" />
     </list>
-    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -39,6 +38,13 @@
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
     <ConfirmationsSetting value="1" id="Add" />
   </component>
+  <component name="ProjectViewState">
+    <option name="autoscrollFromSource" value="true" />
+    <option name="autoscrollToSource" value="true" />
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showExcludedFiles" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
   <component name="PropertiesComponent">
     <property name="last_opened_file_path" value="$PROJECT_DIR$/src/main/java/firstSEI/Resources" />
     <property name="project.structure.last.edited" value="SDKs" />
@@ -54,18 +60,6 @@
       <recent name="C:\Users\Leonidus\projects\appiumFrameworkSEI\src\main\java\firstSEI\Resources" />
       <recent name="C:\Users\Leonidus\projects\appiumFrameworkSEI\src\main\java\firstSEI" />
     </key>
-  </component>
-  <component name="RunDashboard">
-    <option name="ruleStates">
-      <list>
-        <RuleState>
-          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
-        </RuleState>
-        <RuleState>
-          <option name="name" value="StatusDashboardGroupingRule" />
-        </RuleState>
-      </list>
-    </option>
   </component>
   <component name="RunManager" selected="TestNG.C:/Users/Leonidus/projects/appiumFrameworkSEI/testng.xml">
     <configuration name="AboutPage" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
@@ -145,6 +139,18 @@
       </list>
     </recent_temporary>
   </component>
+  <component name="ServiceViewManager">
+    <option name="viewStates">
+      <list>
+        <serviceView>
+          <treeState>
+            <expand />
+            <select />
+          </treeState>
+        </serviceView>
+      </list>
+    </option>
+  </component>
   <component name="SvnConfiguration">
     <configuration />
   </component>
@@ -170,5 +176,23 @@
         </entry>
       </map>
     </option>
+  </component>
+  <component name="WindowStateProjectService">
+    <state width="1877" height="288" key="GridCell.Tab.0.bottom" timestamp="1576316556833">
+      <screen x="-1920" y="-312" width="1920" height="1050" />
+    </state>
+    <state width="1877" height="288" key="GridCell.Tab.0.bottom/0.0.1366.738/-1920.-312.1920.1050@-1920.-312.1920.1050" timestamp="1576316556833" />
+    <state width="1877" height="288" key="GridCell.Tab.0.center" timestamp="1576316556833">
+      <screen x="-1920" y="-312" width="1920" height="1050" />
+    </state>
+    <state width="1877" height="288" key="GridCell.Tab.0.center/0.0.1366.738/-1920.-312.1920.1050@-1920.-312.1920.1050" timestamp="1576316556833" />
+    <state width="1877" height="288" key="GridCell.Tab.0.left" timestamp="1576316556832">
+      <screen x="-1920" y="-312" width="1920" height="1050" />
+    </state>
+    <state width="1877" height="288" key="GridCell.Tab.0.left/0.0.1366.738/-1920.-312.1920.1050@-1920.-312.1920.1050" timestamp="1576316556832" />
+    <state width="1877" height="288" key="GridCell.Tab.0.right" timestamp="1576316556833">
+      <screen x="-1920" y="-312" width="1920" height="1050" />
+    </state>
+    <state width="1877" height="288" key="GridCell.Tab.0.right/0.0.1366.738/-1920.-312.1920.1050@-1920.-312.1920.1050" timestamp="1576316556833" />
   </component>
 </project>

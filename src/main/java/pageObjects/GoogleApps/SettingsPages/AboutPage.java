@@ -1,8 +1,6 @@
 package pageObjects.GoogleApps.SettingsPages;
 
 import firstSEI.Utilities;
-import io.appium.java_client.android.nativekey.AndroidKey;
-import io.appium.java_client.android.nativekey.KeyEvent;
 import org.testng.Assert;
 
 import java.util.*;
@@ -47,8 +45,6 @@ public class AboutPage extends Utilities{
 
         //verify Play Store version - can't be verified
         //go back to main page
-        pressKeyComb("back", 2);
-        pressKeyComb("left", 4);
-        pressKeyComb("back", 1);
+        pressKeyComb("back", 5);
     }
 }

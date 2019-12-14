@@ -3,6 +3,9 @@ package firstSEI;
 import io.appium.java_client.android.nativekey.AndroidKey;
 import io.appium.java_client.android.nativekey.KeyEvent;
 
+import java.util.HashMap;
+import java.util.Map;
+
 public class Utilities extends Base {
 
     public void scrollToText(String text) {
@@ -11,20 +14,22 @@ public class Utilities extends Base {
 
     public void goToGooglePlay() throws InterruptedException {
         Thread.sleep(beforeWait);
-        //driver.pressKey(new KeyEvent(AndroidKey.DPAD_DOWN));
         pressKeyComb("down", 1);
 
         pressKeyComb("left", 4);
 
-        driver.pressKey(new KeyEvent(AndroidKey.DPAD_CENTER));
+        pressKeyComb("center", 1);
         Thread.sleep(2000); //increase if fails!!!
-        //driver.pressKey(new KeyEvent(AndroidKey.HOME));
-        //driver.findElementById("com.android.vending:id/title_badge").isDisplayed();
         driver.findElementById(OR.getProperty("main_title_ID_GP")).isDisplayed();
 
-        for (int i = 1; i <= Integer.parseInt(OR.getProperty("sideElementsCount")); i++) {
-            driver.findElementByXPath("//android.support.v7.widget.RecyclerView[@content-desc=\"Navigation menu\"]" +
-                    "/android.widget.FrameLayout[" + i + "]/android.widget.TextView").isDisplayed();
+        Map<Integer, String> mainCategoriesMap = new HashMap<>();
+
+        mainCategoriesMap.put(0, "Apps");
+        mainCategoriesMap.put(1, "Games");
+        mainCategoriesMap.put(2, "My apps");
+
+        for (Map.Entry<Integer, String> entry : mainCategoriesMap.entrySet()) {
+            findByTextByUIAUT(entry.getValue());
         }
     }
 

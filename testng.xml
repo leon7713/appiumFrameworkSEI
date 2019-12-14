@@ -49,16 +49,16 @@
 <!--        </classes>-->
 <!--    </test>-->
 
-    <test verbose="2" preserve-order="true" name="AutoUpdateAppsPageTests">
-        <classes>
-            <class name="firstSEI.GoogleApps.SettingsPages.AboutPageTest"/>
-        </classes>
-    </test>
-
-<!--    <test verbose="2" preserve-order="true" name="MyAppsPageTests">-->
+<!--    <test verbose="2" preserve-order="true" name="AutoUpdateAppsPageTests">-->
 <!--        <classes>-->
-<!--            <class name="firstSEI.GoogleApps.GooglePlayMyAppsTests"/>-->
+<!--            <class name="firstSEI.GoogleApps.SettingsPages.AboutPageTest"/>-->
 <!--        </classes>-->
 <!--    </test>-->
+
+    <test verbose="2" preserve-order="true" name="MyAppsPageTests">
+        <classes>
+            <class name="firstSEI.GoogleApps.GooglePlayMyAppsTests"/>
+        </classes>
+    </test>
 
 </suite>

@@ -1,6 +1,5 @@
 package pageObjects.GoogleApps;
 
-import firstSEI.Base;
 import firstSEI.Utilities;
 import io.appium.java_client.android.nativekey.AndroidKey;
 import io.appium.java_client.android.nativekey.KeyEvent;
@@ -10,9 +9,7 @@ import pageObjects.GoogleApps.SettingsPages.AutoUpdateAppsPage;
 import pageObjects.GoogleApps.SettingsPages.ParentalControlsPage;
 import pageObjects.GoogleApps.SettingsPages.PurchaseAuthorizationPage;
 
-public class GooglePlaySettingsPage extends Base {
-
-    Utilities utilities = new Utilities();
+public class GooglePlaySettingsPage extends Utilities {
 
     public void verifyGooglePlaySettingsPageTest() throws Exception {
 
@@ -48,11 +45,9 @@ public class GooglePlaySettingsPage extends Base {
         return new AutoUpdateAppsPage();
     }
 
-    public AboutPage getAboutPage() {
-        for (int i = 0; i < 4; i++) {
-            driver.pressKey(new KeyEvent(AndroidKey.DPAD_RIGHT));
-        }
-        driver.pressKey(new KeyEvent(AndroidKey.DPAD_CENTER));
+    public AboutPage getAboutPage() throws InterruptedException {
+        pressKeyComb("down", 3);
+        pressKeyComb("center", 1);
         return new AboutPage();
     }
 }
