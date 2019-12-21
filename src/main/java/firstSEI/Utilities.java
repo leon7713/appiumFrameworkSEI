@@ -16,7 +16,7 @@ public class Utilities extends Base {
         Thread.sleep(beforeWait);
         pressKeyComb("down", 1);
 
-        pressKeyComb("left", 4);
+        pressKeyComb("left", 5);
 
         pressKeyComb("center", 1);
         Thread.sleep(2000); //increase if fails!!!
@@ -33,8 +33,8 @@ public class Utilities extends Base {
         }
     }
 
-    public void findByText(String text) {
-        driver.findElementByXPath(text).isDisplayed();
+    public void findByText(String XPATH) {
+        driver.findElementByXPath(XPATH).isDisplayed();
     }
 
     public void findByTextByUIAUT(String neededText) {
